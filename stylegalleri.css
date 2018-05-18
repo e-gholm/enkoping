@@ -1,0 +1,147 @@
+*
+{
+
+	margin: 0;
+	padding: 0;
+	
+}
+
+header 
+{
+	
+	background-image:url(kran.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.main-nav
+{
+	
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	
+}
+
+.main-nav li 
+{
+	
+	display: inline-block;
+	
+}
+
+.main-nav li a
+{
+	
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "roboto", sans-serif;
+	font-size: 45px;
+	
+}
+
+
+.main-nav li.active a
+{
+	
+	border: 1px solid white;
+	
+}
+
+.main-nav li a:hover
+{
+	
+	border: 1px solid white;
+	
+}
+
+.logo 
+{
+	
+	float: right;
+	
+}
+
+img 
+{
+	
+	height: 100px;
+	width: 250px;
+	
+}
+
+.center 
+{
+	
+	text-align: center;
+	
+}
+
+p 
+{
+	
+	text-align: center;
+	
+	font-family: "roboto", sans-serif;
+	
+	
+
+}
+
+.block 
+{
+	border: 2px solid white;
+	display: inline-block;
+	border-radius: 10px;
+	
+}
+
+.rubrik 
+{
+	
+	font-size: 38px;
+	color: white;
+	
+}
+
+.texten 
+{
+	
+	color: white;
+	font-size: 25px;
+	
+}
+
+
+/*slider ladda skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*slider punkt skin 052 css*/
+        .jssorb052 .i {position:absolute;cursor:pointer;}
+        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+        .jssorb052 .i:hover .b {fill-opacity:.7;}
+        .jssorb052 .iav .b {fill-opacity: 1;}
+        .jssorb052 .i.idn {opacity:.3;}
+
+        /*slider pil skin 053 css*/
+        .jssora053 {display:block;position:absolute;cursor:pointer;}
+        .jssora053 .a {fill:none;stroke:#fff;stroke-width:640;stroke-miterlimit:10;}
+        .jssora053:hover {opacity:.8;}
+        .jssora053.jssora053dn {opacity:.5;}
+        .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+
+
+

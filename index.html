@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head> 
+<title>ENKÖPING</title>
+<link href="style.css" rel = "stylesheet" type = "text/css">
+</head>
+
+<body>
+
+
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div>
+<script>
+
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+
+var clipbottom=(window.innerHeight)?parseInt(window.innerHeight)/2:document.body.offsetHeight/2
+cliptop=0
+for (i=1;i<=2;i++){
+temp[i]=document.getElementById("i"+i).style
+temp[i].width=(window.innerWidth)?(window.innerWidth-15) + 'px' :document.body.clientWidth + 'px'
+temp[i].height=(window.innerWidth)?window.innerHeight/2 + 'px' :document.body.offsetHeight/2 + 'px'
+temp[i].top=(i-1)*parseInt(temp[i].height) + 'px'
+}
+
+
+function openit(){
+
+clipbottom-=speed
+temp[1].clip="rect(0 auto "+clipbottom+"px 0)"
+cliptop+=speed
+temp[2].clip="rect("+cliptop+"px auto auto auto)"
+if (clipbottom<=-5){
+clearInterval(stopit)
+temp[1].display="none"
+temp[2].display="none"
+}
+}
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+
+</script>
+
+
+<header> 
+
+
+
+
+<div class = "row">
+
+
+
+<ul class = "main-nav">
+<li class = "active"> <a href = "">HEM</a></li>
+<li> <a href = "galleri.html">GALLERI</a></li>
+<li> <a href = "quiz.html">QUIZ</a></li>
+</ul>
+
+</div>
+
+<div class = "logo"> <img src = "logo.png"> </div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+<div class = "center">
+<div class = "block">
+<p> 
+	
+	</br>
+	<div class = "rubrik">ENKÖPING</div> <br />
+	<div class = "texten">
+	Här finner du småstadsatmosfär </br>
+	och en levande landsbygd på ett </br>
+	bekvämt pendlingsavstånd till </br>
+    Stockholm,
+	Västerås och Uppsala. </br>
+	Utöver staden Enköping finns </br> bland annat 
+	orterna Örsundsbro, </br>Hummelsta, Grillby, 
+	Fjärdhundra </br>och Lillkyrka i kommunen.
+	</br>
+	</br>
+	</div>
+	
+</p>
+
+</div>
+</div>
+
+</header>
+
+
+
+
+
+
+</body>
+
+</html>
